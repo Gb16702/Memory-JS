@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="results">
+        <div class="blockTit">
+            <h1>Résultats de la partie</h1>
+        </div>
+        <div class="blockBody">
+            <h3 class = "duration"></h3>
+            <h3 class = "attempts"></h3>
+            <h3 class = "ratio"></h3>
+            <button class = "reload" onClick = "history.go(0)">Quitter la partie</button>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-tit">
+            <span class = "edge"></span>
+            <h2>Règles du Memory</h2>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3 class = modal-text>Le but de ce jeu est de tirer au hasard une carte, et de trouver celle qui lui est identique à la prochaine pioche. <br>
+            En effet, chaque carte contient une image. Il y a donc 16 cartes pour 8 images différentes. <br>
+             Une fois que vous avez trouvé une paire de carte identique, elle restera retournée jusqu'à la fin du jeu. <br> Il faut essayer de finir le plus vite possible</h3>
+        </div>
+    </div>
+    <div class="titreCont">
+        <h2 class="titre">Bienvenue sur le jeu du Memory</h2>
+        <div class = "sousTitreCont">
+            <h5 style = 'height:25px'>
+                Examen de JavaScript du 24 novembre 2022 - Exercice 3
+            </h5>
+            <span class = "must" style = "visibility: hidden">Vous devez d'abord lancer le jeu</span>
+        </div>
+    </div>
+        <div class="wrapper">
+            <ul class="cards">
+                <li class="card">
+                    <div class=" view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class=" view back-view">
+                        <img src="images/img-1.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-2.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-3.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-4.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-5.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-6.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-7.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-8.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-1.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-2.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-3.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-4.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-5.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-6.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-7.png" alt="">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <span class="material-icons">question_mark</span>
+                    </div>
+                    <div class="view back-view">
+                        <img src="images/img-8.png" alt="">
+                    </div>
+                </li>
+                <div class="timer">
+                    <h4 class = 'chrono'>Temps : 00:00:00</h4>
+                    <h4 class = "essais">Echecs : 0</h4>
+                  </div>
+            </ul>
+        </div>
+
+        <div class="buttonSection">
+            <button class = 'restart' onClick = "history.go(0)">Relancer</button>
+            <button onclick = start() class = "start"><p class = "play">Jouer au jeu</p></button>
+            <button class = "rules"><p>Quel est le but du jeu ?</p></button>
+        </div>
+        <script src="memory.js"></script>
+</body>
+</html>
